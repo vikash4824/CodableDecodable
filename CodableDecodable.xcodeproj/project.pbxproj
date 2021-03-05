@@ -15,6 +15,10 @@
 		6540977E25F1E647005BF9E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6540977C25F1E647005BF9E0 /* LaunchScreen.storyboard */; };
 		6540978925F1E648005BF9E0 /* CodableDecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6540978825F1E648005BF9E0 /* CodableDecodableTests.swift */; };
 		6540979425F1E648005BF9E0 /* CodableDecodableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6540979325F1E648005BF9E0 /* CodableDecodableUITests.swift */; };
+		654097B125F1F7A7005BF9E0 /* GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654097B025F1F7A7005BF9E0 /* GitHub.swift */; };
+		654097B625F1F80B005BF9E0 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654097B525F1F80B005BF9E0 /* Movies.swift */; };
+		654097BB25F1F82B005BF9E0 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654097BA25F1F82B005BF9E0 /* Json.swift */; };
+		654097C325F1FA45005BF9E0 /* Actors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654097C225F1FA45005BF9E0 /* Actors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		6540978F25F1E648005BF9E0 /* CodableDecodableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodableDecodableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6540979325F1E648005BF9E0 /* CodableDecodableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableDecodableUITests.swift; sourceTree = "<group>"; };
 		6540979525F1E648005BF9E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		654097B025F1F7A7005BF9E0 /* GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub.swift; sourceTree = "<group>"; };
+		654097B525F1F80B005BF9E0 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		654097BA25F1F82B005BF9E0 /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		654097C225F1FA45005BF9E0 /* Actors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +110,10 @@
 				6540977125F1E646005BF9E0 /* AppDelegate.swift */,
 				6540977325F1E646005BF9E0 /* SceneDelegate.swift */,
 				6540977525F1E646005BF9E0 /* ViewController.swift */,
-				6540977725F1E646005BF9E0 /* Main.storyboard */,
-				6540977A25F1E647005BF9E0 /* Assets.xcassets */,
+				654097CE25F206A9005BF9E0 /* View */,
 				6540977C25F1E647005BF9E0 /* LaunchScreen.storyboard */,
 				6540977F25F1E647005BF9E0 /* Info.plist */,
+				654097CD25F20672005BF9E0 /* Model */,
 			);
 			path = CodableDecodable;
 			sourceTree = "<group>";
@@ -126,6 +134,26 @@
 				6540979525F1E648005BF9E0 /* Info.plist */,
 			);
 			path = CodableDecodableUITests;
+			sourceTree = "<group>";
+		};
+		654097CD25F20672005BF9E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				654097B025F1F7A7005BF9E0 /* GitHub.swift */,
+				654097B525F1F80B005BF9E0 /* Movies.swift */,
+				654097BA25F1F82B005BF9E0 /* Json.swift */,
+				654097C225F1FA45005BF9E0 /* Actors.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		654097CE25F206A9005BF9E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6540977725F1E646005BF9E0 /* Main.storyboard */,
+				6540977A25F1E647005BF9E0 /* Assets.xcassets */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				654097B625F1F80B005BF9E0 /* Movies.swift in Sources */,
 				6540977625F1E646005BF9E0 /* ViewController.swift in Sources */,
 				6540977225F1E646005BF9E0 /* AppDelegate.swift in Sources */,
+				654097BB25F1F82B005BF9E0 /* Json.swift in Sources */,
+				654097B125F1F7A7005BF9E0 /* GitHub.swift in Sources */,
+				654097C325F1FA45005BF9E0 /* Actors.swift in Sources */,
 				6540977425F1E646005BF9E0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,16 +466,18 @@
 		6540979925F1E648005BF9E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = QJ38K4FTCM;
 				INFOPLIST_FILE = CodableDecodable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = vikash.CodableDecodable;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.2012.vamsivikash24.75;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -453,16 +487,18 @@
 		6540979A25F1E648005BF9E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = QJ38K4FTCM;
 				INFOPLIST_FILE = CodableDecodable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = vikash.CodableDecodable;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.2012.vamsivikash24.75;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
